@@ -7,4 +7,11 @@
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
 </properties>
+  <distributionManagement>
+  <snapshotRepository>
+    <id>cicd</id>
+    <name>cicd</name>
+    <url>http://localhost:8081/repository/cicd/</url>
+  </snapshotRepository>
+</distributionManagement>  
 </project>
