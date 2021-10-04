@@ -11,9 +11,9 @@ pipeline{
           bat 'mvn clean'
           }         
       }
-        stage('Test'){
+        stage('new'){
           steps{
-          bat 'mvn clean'
+         echo 'New Stage'
           }         
       }
     }
