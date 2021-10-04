@@ -11,9 +11,14 @@ pipeline{
           bat 'mvn clean'
           }         
       }
-        stage('new'){
+        stage('Stage 3'){
           steps{
-         echo 'New Stage'
+         echo 'Stage 3'
+          }         
+      }
+        stage('Stage 4'){
+          steps{
+         echo 'Stage4'
           }         
       }
     }
