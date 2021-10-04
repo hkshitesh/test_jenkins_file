@@ -10,6 +10,10 @@ pipeline{
           steps{
           bat 'mvn clean'
           }
+          stage('STG'){
+          steps{
+          echo 'STG Stage'
+          }
       }
     }
 }
