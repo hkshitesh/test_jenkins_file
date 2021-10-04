@@ -9,11 +9,12 @@ pipeline{
       stage('Test'){
           steps{
           bat 'mvn clean'
-          }
-          stage('STG'){
+          }         
+      }
+        stage('Test'){
           steps{
-          echo 'STG Stage'
-          }
+          bat 'mvn clean'
+          }         
       }
     }
 }
