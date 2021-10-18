@@ -8,23 +8,14 @@ pipeline{
       }
       stage('Test'){
           steps{
-          bat 'mvn clean'
+           echo 'Test Stage'
           }         
       }
-        stage('Stage 3'){
+        stage('Deploye'){
           steps{
-         echo 'Stage 3'
+         echo 'Deploy Stage'
           }         
       }
-        stage('Stage 4'){
-          steps{
-         echo 'Stage4'
-          }         
-      }
-        stage('Stage 5'){
-          steps{
-         echo 'Stage5'
-          }         
-      }
+      
     }
 }
